@@ -4,7 +4,9 @@ public class TarjetaDeCredito extends Tarjeta implements Pagadora{
 	
 	private Double limiteDeCompra;
 
-	
+	public Double getLimiteDeCompra() {
+		return limiteDeCompra;
+	}
 
 	public void setLimiteDeCompra(Double limiteDeCompra) {
 		this.limiteDeCompra = limiteDeCompra;
@@ -28,9 +30,6 @@ public class TarjetaDeCredito extends Tarjeta implements Pagadora{
 		return super.getSaldo();
 	}
 	
-	public Double getLimiteDeCompra() {
-		return limiteDeCompra;
-	}
 	
 
 }

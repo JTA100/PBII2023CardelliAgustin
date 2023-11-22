@@ -11,7 +11,6 @@ public class Tarjeta extends Medio{
 	
 	public Tarjeta(Long numero, String fechaDeVencimiento, Integer codigoDeSeguridad, Double saldo) {
 		
-		super(fechaDeVencimiento);
 		this.numero = numero;
 		this.fechaDeVencimiento = fechaDeVencimiento;
 		this.codigoDeSeguridad = codigoDeSeguridad;
