@@ -6,13 +6,13 @@ import java.util.Set;
 
 public class Persona {
 	
-	private Long cuil;
+	private Integer cuil;
 	private String apellido;
 	private String nombre;
 	private Set<Medio> mediosDePago;
 	
 	
-	public Persona(Long cuil, String apellido, String nombre) {
+	public Persona(Integer cuil, String apellido, String nombre) {
 		this.cuil = cuil;
 		this.apellido = apellido;
 		this.nombre = nombre;
@@ -45,12 +45,12 @@ public class Persona {
 
 
 /// getters y setters
-	public Long getCuil() {
+	public Integer getCuil() {
 		return cuil;
 	}
 
 
-	public void setCuil(Long cuil) {
+	public void setCuil(Integer cuil) {
 		this.cuil = cuil;
 	}
 

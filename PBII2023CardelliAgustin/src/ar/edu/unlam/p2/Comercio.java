@@ -4,10 +4,10 @@ import java.util.Objects;
 
 public class Comercio {
 	
-	private Long cuit;
+	private Integer cuit;
 	private String nombre;
 	
-	public Comercio(Long cuit, String nombre) {
+	public Comercio(Integer cuit, String nombre) {
 		this.cuit = cuit;
 		this.nombre = nombre;
 	}
@@ -40,11 +40,11 @@ public class Comercio {
 
 
 	/// getters y setters
-	public Long getCuit() {
+	public Integer getCuit() {
 		return cuit;
 	}
 
-	public void setCuit(Long cuit) {
+	public void setCuit(Integer cuit) {
 		this.cuit = cuit;
 	}
 

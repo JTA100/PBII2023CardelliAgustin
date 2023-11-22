@@ -9,6 +9,12 @@ public class test {
 	@Test
 	public void queSePuedanAlmacenarLosDistintosTiposDeTransacciones() {
 		
+		Persona persona = new Persona(40075, "Cardelli", "Agustin");
+		Comercio comercio = new Comercio(1234, "Agus");
+		Billetera billetera = new Billetera("nombre");
+		billetera.agregarPersona(persona);
+		billetera.agregarComercio(comercio);
+		
 	}
 	
 	
@@ -26,6 +32,8 @@ public class test {
 	
 	@Test
 	public void queSePuedanRealizarCompras() {
+		
+		
 		
 	}
 	

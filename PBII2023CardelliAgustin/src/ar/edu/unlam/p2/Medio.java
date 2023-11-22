@@ -2,12 +2,8 @@ package ar.edu.unlam.p2;
 
 public class Medio {
 	
-	private String titular;
+	protected String titular;
 	
-	public Medio(String titular) {
-		
-		this.titular = titular;
-	}
 
 	public String getTitular() {
 		return titular;
