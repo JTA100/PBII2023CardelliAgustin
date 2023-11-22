@@ -4,9 +4,10 @@ public class Compra {
 	
 	private Double importe;
 	private Boolean pagada;
+	private Comercio comercio;
 	
-	
-	public Compra(Double importe, Boolean pagada) {
+	public Compra(Comercio comercio, Double importe, Boolean pagada) {
+		this.setComercio(comercio);
 		this.importe = importe;
 		this.pagada = pagada;
 	}
@@ -29,5 +30,15 @@ public class Compra {
 
 	public void setPagada(Boolean pagada) {
 		this.pagada = pagada;
+	}
+
+
+	public Comercio getComercio() {
+		return comercio;
+	}
+
+
+	public void setComercio(Comercio comercio) {
+		this.comercio = comercio;
 	}
 }

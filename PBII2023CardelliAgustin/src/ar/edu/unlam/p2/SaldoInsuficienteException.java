@@ -1,5 +1,5 @@
 package ar.edu.unlam.p2;
 
-public class SaldoInsuficienteException {
+public class SaldoInsuficienteException extends Exception{
 	
 }

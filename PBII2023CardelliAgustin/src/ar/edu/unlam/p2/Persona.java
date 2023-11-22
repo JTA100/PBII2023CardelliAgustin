@@ -1,18 +1,22 @@
 package ar.edu.unlam.p2;
 
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 public class Persona {
 	
 	private Long cuil;
 	private String apellido;
 	private String nombre;
+	private Set<Medio> mediosDePago;
 	
 	
 	public Persona(Long cuil, String apellido, String nombre) {
 		this.cuil = cuil;
 		this.apellido = apellido;
 		this.nombre = nombre;
+		this.mediosDePago = new HashSet<Medio>();
 	}
 
 	
@@ -68,6 +72,20 @@ public class Persona {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+
+
+
+
+	public Set<Medio> getMediosDePago() {
+		return mediosDePago;
+	}
+
+
+
+
+	public void setMediosDePago(Set<Medio> mediosDePago) {
+		this.mediosDePago = mediosDePago;
 	}
 
 }
